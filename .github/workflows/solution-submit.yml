@@ -1,0 +1,14 @@
+name: Challenge Submission
+
+on: [pull_request_target, pull_request]
+jobs:
+  pr_description:
+    runs-on: ubuntu-latest
+    name: PR description
+
+    steps:
+      - name: Comment on the PR with a breif description
+        uses: thollander/actions-comment-pull-request@main
+        with:
+          message: 'Thanks for creating this PR. Please submit your details and a breif description if possible.'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
