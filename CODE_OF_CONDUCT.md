@@ -1,4 +1,4 @@
-#Code of Conduct
+# Coding Challenge Code of Conduct
 
 ## Our Pledge
 
